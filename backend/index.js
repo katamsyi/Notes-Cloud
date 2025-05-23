@@ -59,6 +59,6 @@ app.use((err, req, res, next) => {
 });
 
 // Jalankan server, dengarkan pada port yang sudah ditentukan
-app.listen(PORT, () => {
+app.listen(PORT, "0.0.0.0", () => {
   console.log(`Server berjalan di port: ${PORT}`);
 });
