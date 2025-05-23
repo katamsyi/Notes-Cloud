@@ -10,7 +10,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 // Daftar origin yang diizinkan mengakses backend (frontend biasanya di port 5500)
-const allowedOrigins = ["http://localhost:5500", "http://127.0.0.1:5500"];
+const allowedOrigins = ["http://localhost:5500", "http://127.0.0.1:5500","https://notes-be006-371739253078.us-central1.run.app"];
 
 app.use(
   cors({
