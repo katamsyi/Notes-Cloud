@@ -1,0 +1,235 @@
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Dashboard */
+.dashboard {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.dashboard h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.search-bar {
+  margin-top: 10px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+}
+
+#add-note {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+#add-note:hover {
+  background-color: #45a049;
+}
+
+/* Daftar Catatan */
+.notes-list {
+  margin-top: 20px;
+}
+
+.notes-list h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+#notes-list {
+  list-style: none;
+  padding: 0;
+}
+
+.note-item {
+  background-color: #fff;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.note-item:hover {
+  transform: translateX(10px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Detail Catatan */
+.note-details {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.note-details input,
+.note-details textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+}
+
+.note-details textarea {
+  height: 200px;
+}
+
+.note-buttons button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 10px;
+  transition: background-color 0.3s;
+}
+
+.note-buttons button#save-note {
+  background-color: #28a745;
+}
+
+.note-buttons button#update-note {
+  background-color: #ffc107;
+}
+
+.note-buttons button#delete-note {
+  background-color: #dc3545;
+}
+
+.note-buttons button:hover {
+  opacity: 0.8;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .dashboard,
+  .note-details {
+    padding: 15px;
+  }
+
+  #note-title,
+  #note-content {
+    font-size: 14px;
+  }
+
+  .note-buttons button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+/* Style for the History section to match the Notes section */
+.notes-list {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.notes-list h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+#notes-list {
+  list-style: none;
+  padding: 0;
+}
+
+.note-item {
+  background-color: #fff;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.note-item:hover {
+  transform: translateX(10px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the History section with a scrollbar */
+.notes-list {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  height: 300px; /* Adjust this height as needed */
+  overflow-y: auto; /* Enable vertical scrollbar */
+}
+
+.notes-list h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+#notes-list {
+  list-style: none;
+  padding: 0;
+}
+
+.note-item {
+  background-color: #fff;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.note-item:hover {
+  transform: translateX(10px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
