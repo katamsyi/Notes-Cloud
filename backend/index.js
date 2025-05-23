@@ -9,7 +9,7 @@ const noteRoutes = require("./routes/noteRoutes");
 const app = express();
 
 // Gunakan PORT dari environment variable, default ke 8080 yang umum di Cloud Run
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 5000;
 
 // Daftar origin yang diizinkan mengakses backend (sesuaikan frontend port dan domain)
 const allowedOrigins = [
